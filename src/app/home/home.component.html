@@ -1,0 +1,10 @@
+<div>
+  <div class="home" (click)="gotoAbout()">
+    我是首页
+  </div>
+  <app-tablebar-com
+    *ngFor="let goodItem of goods; let i = index"
+    [goodItem]="goodItem"
+    [i]="i"
+  ></app-tablebar-com>
+</div>
